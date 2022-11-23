@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-y: scroll;
+}
+#main-container{
+    background-image: url('images/netflix.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 8px solid #222222;
+   
+}
+
+
+
+#translucent {
+   background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+     top: 0;
+     bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    background: -webkit-gradient(linear, left bottom, from(black), color-stop(50%, rgba(255, 255, 255, 0)), to(black));
+    background: linear-gradient(180deg, black 0%, rgba(255, 255, 255, 0) 50%, black 100%);
+    
+}
+
+#top{
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+#logo{
+    padding-right: 50px;
+    color: red;
+}
+#login-btn{
+    background-color: rgba(229, 9, 20);
+   border-radius: 3px;
+   color: white;
+   width: 5rem;
+ height: 2.7rem;
+ border: none;
+ outline: none;
+ margin-right: 3rem;
+ cursor: pointer;
+ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+ font-size: 1rem;
+
+}
+
+#logo{
+    font-weight: 600;
+    font-size: 3.1rem;
+    margin-left: 3rem;
+}
+#center{
+    height: 88%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#center h2 {
+    font-size: 50px;
+    font-family: Netflix Sans;
+    line-height: 55px;
+    word-spacing: 0px;
+    vertical-align: auto;
+    letter-spacing: normal;
+    margin: 0px 155px;
+    font-weight: 700;
+    text-align: center;
+   
+}
+
+#center h2, h3, h4{
+    text-align: center;
+}
+
+ h3 {
+    font-size: 26px;
+    font-family: Netflix Sans;
+    line-height: normal;
+    word-spacing: 0px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    margin: 16px 155px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px;
+word-spacing: 0px;
+}
+
+h4 {
+    font-family:  "Netflix Sans","Helvetica Neue","Segoe UI",Roboto,Ubuntu,sans-serif;
+    font-size: 19.2px;
+    line-height: normal;
+    word-spacing: 0px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    margin: 0px 117.801px;
+    padding: 0px 47.4884px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+button {
+    background-color: red;
+    color: white;
+    height: 60px;
+    width: 25%;
+   font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+input{
+    height: 60px;
+   width: 75%;
+  align-items: center;
+  padding-right: 400px;
+ } 
+
+
+ hr{
+    border: 3px solid rgb(129, 127, 127);
+    background-color: grey;
+}
+.watch{
+    border: 2px solid black;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    color: white;
+    
+}
+.enjoy{
+    border: 2px solid black;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+}
+.firsten{
+    /* border: 2px solid yellow; */
+    width: 40%;
+    width: 40%;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+   
+}
+.secen{
+    /* border: 2px solid blue; */
+    width: 40%;
+    height: 90%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.viddiv{
+    /* border: 2px solid red; */
+    width: 29%;
+    height: 34%;
+    margin-top: 75px;
+    margin-left: 66px;
+    /* margin-bottom: 50px; */
+    position: absolute;
+    z-index: 0;
+    
+}
+.vid{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 50px; */
+    position: absolute;
+    /* z-index: -1; */
+}
+.mobile{
+    border: 2px solid black;
+    background-color: black;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center; 
+    gap: 150px;  
+}
+.firstmo{
+    width: 40%;
+    height: 95%;
+    margin-top: 30px;
+    
+}
+.secmo{
+    width: 40%;
+    height: 90%;
+    margin-top: 100px;
+    color: white;
+   
+}
+.create{
+    border: 2px solid black;
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+    gap: 150px;  
+}
+.firstcr{
+    /* border: 2px solid blue; */
+    width: 40%;
+    height: 90%;
+    margin-top: 30px;
+    color: white;
+    
+}
+.seccr{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 70%;
+    color: white;
+    margin-top: 100px;
+}
+.freq{
+    border: 2px solid black;
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+    color: white;
+
+}
+.faq{
+    border: 2px solid #303030;
+    background-color:  #303030;
+    width: 65%;
+    height: 70px;
+    margin-bottom: 15px;
+    text-align:left;
+    color: white;
+    padding-left: 10px;
+    font-size:x-large ;
+}
+footer{
+    background-color: black;
+    border: 2px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+}
+.f1{
+    width: 15%;
+    height: 300px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.f2{
+    width: 15%;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.f3{
+    width: 15%;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.f4{
+    width: 15%;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+a{
+    margin-bottom: 20px;
+    display: block;
+    color: #303030;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#get-started button{
+    background-color: red;
+    color: white;
+    height: 53px;
+    width: 27%;
+   font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+#get-started input{
+    height: 50px;
+    width: 50%;
+    align-items: center;
+   padding-right: 500px;
+}
